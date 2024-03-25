@@ -1,0 +1,8 @@
+*{
+    transition: .2s linear;
+}
+
+.boxes:hover{
+    scale: 1.1;
+    box-shadow: black;
+}

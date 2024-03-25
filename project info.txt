@@ -1,0 +1,4 @@
+user enters a city, then server shows weather of that city enetred by user on browser.
+
+
+https://api.openweathermap.org/data/2.5/weather?q=pakistan&appid=8ecfdb17a81d4fc60d5bb9ad93e48d53&units=metric
