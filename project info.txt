@@ -2,3 +2,47 @@ user enters a city, then server shows weather of that city enetred by user on br
 
 
 https://api.openweathermap.org/data/2.5/weather?q=pakistan&appid=8ecfdb17a81d4fc60d5bb9ad93e48d53&units=metric
+
+base
+: 
+"stations"
+clouds
+: 
+{all: 100}
+cod
+: 
+200
+coord
+: 
+{lon: 70, lat: 30}
+dt
+: 
+1711390419
+id
+: 
+1168579
+main
+: 
+{temp: 18.52, feels_like: 17.32, temp_min: 18.52, temp_max: 18.52, pressure: 1014, …}
+name
+: 
+"Pakistan"
+sys
+: 
+{country: 'PK', sunrise: 1711329456, sunset: 1711373646}
+timezone
+: 
+18000
+visibility
+: 
+10000
+weather
+: 
+[{…}]
+wind
+: 
+{speed: 2.48, deg: 275, gust: 2.31}
+[[Prototype]]
+: 
+Object
+﻿
