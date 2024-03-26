@@ -6,7 +6,7 @@ searchBtn.addEventListener('click', async (e)=>{
     const search = document.getElementById('searchInput');
     const location = search.value;
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=8ecfdb17a81d4fc60d5bb9ad93e48d53&units=metric`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid={API KEY}&units=metric`
     
     async function getResponse() {
         try{
