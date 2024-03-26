@@ -19,12 +19,22 @@ searchBtn.addEventListener('click', async (e)=>{
     
             const temperature = document.getElementById('temp');
             temperature.innerText = data.main.temp + sign[1];
+            const tempMin = document.getElementById('tempMin');
+            tempMin.innerText = data.main.temp_min + sign[1];
+            const tempMax = document.getElementById('tempMax');
+            tempMax.innerText = data.main.temp_max + sign[1];
+            const feelsLike = document.getElementById('feelsLike');
+            feelsLike.innerText = data.main.feels_like + sign[1]
     
             const windSpeed = document.getElementById('wind');
             windSpeed.innerText = data.wind.speed + sign[2];
+            const grndLevel = document.getElementById('grnd_level');
+            grndLevel.innerText = data.main.grnd_level;
     
             const humidity = document.getElementById('humi');
             humidity.innerText = data.main.humidity + sign[0];
+            const pressure = document.getElementById('pressure');
+            pressure.innerText = data.main.pressure;
     
         } catch (error){
             console.error('there was a problem with the fetch operation');
