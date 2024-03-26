@@ -1,4 +1,6 @@
 const searchBtn = document.getElementById('searchBtn');
+const sign = ['%', '°C'];
+
 searchBtn.addEventListener('click', async (e)=>{
     e.preventDefault();
     const search = document.getElementById('searchInput');
@@ -16,13 +18,13 @@ searchBtn.addEventListener('click', async (e)=>{
             console.log(data);
     
             const temperature = document.getElementById('temp');
-            temperature.innerText = data.main.temp;
+            temperature.innerText = data.main.temp + sign[1];
     
             const windSpeed = document.getElementById('wind');
-            windSpeed.innerText = data.wind.speed;
+            windSpeed.innerText = data.wind.speed + sign[0];
     
             const humidity = document.getElementById('humi');
-            humidity.innerText = data.main.humidity;
+            humidity.innerText = data.main.humidity + sign[0];
     
         } catch (error){
             console.error('there was a problem with the fetch operation');
