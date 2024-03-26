@@ -1,5 +1,5 @@
 const searchBtn = document.getElementById('searchBtn');
-const sign = ['%', '°C'];
+const sign = ['%', '°C', 'km/h'];
 
 searchBtn.addEventListener('click', async (e)=>{
     e.preventDefault();
@@ -21,7 +21,7 @@ searchBtn.addEventListener('click', async (e)=>{
             temperature.innerText = data.main.temp + sign[1];
     
             const windSpeed = document.getElementById('wind');
-            windSpeed.innerText = data.wind.speed + sign[0];
+            windSpeed.innerText = data.wind.speed + sign[2];
     
             const humidity = document.getElementById('humi');
             humidity.innerText = data.main.humidity + sign[0];
